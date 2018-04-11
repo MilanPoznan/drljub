@@ -1,0 +1,46 @@
+.pip {
+  background-color: $gray-light-bg;
+  padding: 60px 10px;
+  &__image-div {
+    width: 100%;
+    height: 220px;
+    margin-bottom: 15px;
+    @include bgImage();
+  }
+  &__sec-title {
+    text-align: center;
+    h4 {
+      padding: 0px 0 30px;
+    }
+  }
+}
+
+@include tablet() {
+  .pip {
+    padding: 100px 60px 0;
+    &__img-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__image-div {
+      width: 49%;
+    }
+  }
+}
+@include desktop() {
+  .pip {
+    &__main-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 0;
+    }
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__wrap-section {
+      width: 49%;
+    }
+  }
+};

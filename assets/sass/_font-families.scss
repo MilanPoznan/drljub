@@ -1,0 +1,38 @@
+/****************
+* Font families *
+****************/
+
+@font-face {
+  font-family: 'ubuntu-bold';
+  src: url('assets/fonts/Ubuntu-Bold.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ubuntu-italic';
+  src: url('assets/fonts/Ubuntu-Italic.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ubuntu-light';
+  src: url('assets/fonts/Ubuntu-Light.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ubuntu-regular';
+  src: url('assets/fonts/Ubuntu-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ubuntu-medium';
+  src: url('assets/fonts/Ubuntu-Medium.ttf');
+  font-weight: normal;
+}
+
+$main-family:         'ubuntu-regular';
+$main-family-light:   'ubuntu-light';
+$main-family-bold:    'ubuntu-bold';
+$second-family:       'dante-regular';

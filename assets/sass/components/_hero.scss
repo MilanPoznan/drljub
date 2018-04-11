@@ -1,0 +1,44 @@
+.hero-mob {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url('img/hero-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom-right-radius: 100% 25%;
+    z-index: 2;
+
+}
+.des {
+    display: none;
+}
+@media screen and (min-width: 1200px) {
+    .hero-des {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image: url('img/hero-image-desktop.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        // border-bottom-right-radius: 100% 30%;
+        z-index: 2;
+        // border-bottom-right-radius: 100% 50%;
+        // border-bottom-left-radius: 100% 15%;
+        img {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 200px;
+            z-index: 22;
+        }
+    }
+    .mob {
+        display: none;
+    }
+    .des {
+        display: flex;
+    }
+}

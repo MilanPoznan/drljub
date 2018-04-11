@@ -1,0 +1,33 @@
+.contact {
+  position: relative;
+  display: flex;
+  // flex-flow: column;
+  padding: 60px 20px;
+  &__bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include bgImage();
+    opacity: 0.2;
+  }
+  &__wrapper {
+    display: flex;
+    flex-flow: column;
+    z-index: 2;
+  }
+
+}
+.contact-field {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid $purple;
+  padding: 15px 0;
+  outline: none;
+  width: 100%;
+}
+.white-cta {
+  @include cta-white();
+  margin: 0 auto;
+}

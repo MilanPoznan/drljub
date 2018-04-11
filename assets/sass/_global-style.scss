@@ -1,0 +1,199 @@
+/*************************************
+* Body, html and other global styles *
+*************************************/
+
+// Default typography styles for the site
+body {
+    // font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+    margin: 0;
+    // background-color: gren;
+}
+
+h1, h2, h3, h4, h5 {
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    color: inherit;
+}
+
+@include mobile() {
+  h1 {
+    font-size: 36px;
+  }
+  .content {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+  }
+  .purple-border-right {
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      width: 224px;
+      height: calc( 100% + 20px );
+      border: 2px solid #7b2a8e;
+      z-index: -1;
+  }
+  .purple-border-left {
+      position: absolute;
+      top: -12px;
+      left: -12px;
+      width: 224px;
+      height: calc( 100% - 20px );
+      border: 2px solid #7b2a8e;
+      z-index: -1;
+  }
+}
+@include tablet() {
+  h1 {
+    font-size: 72px;
+  }
+  .content {
+    // p {
+      img {
+        width: 40%;
+        height: 100%;
+      }
+      p {
+        font-size: 16px;
+      }
+    // }
+  }
+  .purple-border-right {
+    top: -12px;
+    right: -20px;
+    width: 70%;
+    height: calc( 100% + 20px);
+  }
+  .purple-border-left {
+      position: absolute;
+      top: -12px;
+      left: -20px;
+      width: 70%;
+      height: calc( 100% + 20px);
+  }
+}
+@include desktop() {
+  .purple-border-right {
+    height: 400px;
+    top: -22px;
+  }
+  .purple-border-left {
+    height: 400px;
+    top: -22px;
+  }
+}
+
+
+// class for a page content site-wide for the purpose of WYSIWYG editor
+.content {
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: left;
+
+    h1, h2, h3, h4, h5, h6 {
+        padding: 20px 0px;
+        font-weight: 700;
+    }
+
+    h1 {
+        font-size: 72px;
+    }
+
+    h2 {
+        font-size: 30px;
+        color: $purple;
+
+    }
+
+    h3 {
+        font-size: 30px;
+        color: $purple;
+
+    }
+
+    h4 {
+        font-size: 20px;
+        color: $purple;
+
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+    p {
+      font-size: 18px;
+    }
+    em {
+      color: $purple;
+
+    }
+ul {
+        li {
+            list-style-type: none;
+            line-height: 30px;
+            margin: 0;
+        }
+    }
+    ol {
+        li {
+            list-style-type: none;
+            line-height: 30px;
+            margin: 0;
+        }
+    }
+  }
+
+// Prevent scroll
+.no-scroll {
+    height: 100%;
+    overflow: hidden;
+}
+
+/****************
+* Layout mixins *
+****************/
+
+@mixin centerX () {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin centerY () {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin centerXY () {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin resetCenterX () {
+    position: static;
+    left: auto;
+    transform: translateX(0%);
+}
+
+@mixin resetCenterY () {
+    position: static;
+    top: auto;
+    transform: translateY(0%);
+}
+
+@mixin resetCenterXY () {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: translate(0%, 0%);
+}

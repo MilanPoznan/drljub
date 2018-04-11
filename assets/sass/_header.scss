@@ -1,0 +1,165 @@
+
+.header {
+    width: 100%;
+    height: 85px;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    &__navigation {
+        display: none;
+    }
+    &__extra-desktop-header {
+        display: none;
+    }
+    &__phone {
+        position: absolute;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'ubuntu-bold';
+        color: #7b2a8e;
+    }
+    
+    &__menu-button {
+        position: absolute;
+        float: right;
+        display: inline-block;
+        // top: 25px;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        border: 0px;
+        background-color: transparent;
+    }
+    &__logo {
+        margin-right: 10px;
+        z-index: 3;
+    }
+    &__menu-button-hamburger {
+        // @include centerXY();
+        top: auto;
+        left: auto;
+        transform: translate(0%, 0%);
+        position: absolute;
+        display: inline-block;
+        padding: 0px;
+        width: 35px;
+        height: 3px;
+        background-color: $purple;
+        border: 0px;
+        border-radius: 2px;
+        z-index: 20;
+        outline: none;
+        transition: 0.2s ease-out;
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            display: block;
+            left: 0;
+            width: 35px;
+            height: 3px;
+            background-color: $purple;
+            border-radius: 2px;
+            transition: 0.2s ease-out;
+        }
+
+        &:before {
+            top: -10px;
+        }
+
+        &:after {
+            bottom: -10px;
+        }
+
+        // Additional class for animation purpose
+        &.is-open {
+            background-color: transparent;
+
+            &:before {
+                top: 0;
+                transform: rotate(-45deg);
+            }
+
+            &:after {
+                bottom: 0;
+                transform: rotate(45deg);
+            }
+
+        }
+
+    } // &__menu-button-hamburger
+}
+.sub-menu {
+    .menu-item-has-children {
+        &:after {
+            // display: none;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .header {
+        &__phone {
+            position: relative;
+            display: block;
+            text-align: right;
+            margin-right: 40px;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .header {
+        position: absolute;
+        top: 00;
+        left: 0;
+        right: 0;
+        width: 80%;
+        height: 120px;
+        flex-flow: row;
+        padding: 0 10%;
+        background-color: rgba(255, 255, 255, 0.4);
+        z-index: 3;
+        &__head-wrap {
+            height: 55%;
+            display: flex;
+            flex-flow: column;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+        &__extra-desktop-header {
+            display: flex;
+            width: 300px;
+            justify-content: space-evenly;
+            a {
+                padding: 2px 10px;
+                text-transform: none;
+                text-decoration: none;
+                font-size: 14px;
+                font-family: 'ubuntu-regular';
+                color: #7b2a8e;
+                border-radius: 10px;
+                &:hover {
+                    color: #fff;
+                    background:  #7b2a8e;
+
+                }
+            }
+        }
+        &__navigation {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+        }
+        &__phone {
+            display: none;
+        }
+        &__menu-button {
+            display: none;
+        }
+
+    }
+
+}

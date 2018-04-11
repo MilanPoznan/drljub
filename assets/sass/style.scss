@@ -1,0 +1,40 @@
+
+/*!
+Theme Name: SFS
+Theme URI: http://test.yes/
+Author: WebMo design
+Author URI: http://webmodesign.is/
+Description: SFS company custom Wordpress theme
+Version: 1.0.0
+Text Domain: sfs
+Tags:
+
+SFS Theme is based on Timber framework http://timber.github.io/timber/.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/,
+and Eric Meyer http://meyerweb.com/eric/tools/css/reset/.
+*/
+
+@import
+// General styles
+"font-families",
+"colors",
+"media-mixins",
+"layout-mixins",
+"elements-mixins",
+"header",
+"menu",
+"global-style",
+
+"components/concept",
+"components/contact",
+"components/content-component",
+"components/footer",
+"components/hero",
+"components/hero-template",
+"components/header-footer",
+"components/gallery",
+"components/intro",
+"components/pre-i-posle",
+"components/single";
