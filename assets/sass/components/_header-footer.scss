@@ -1,0 +1,13 @@
+.is-open {
+  background-color: transparent;
+  &:before {
+      top: 0;
+      transform: rotate(-45deg);
+      // background-color: $light-black;
+  }
+  &:after {
+      bottom: 0;
+      transform: rotate(45deg);
+      // background-color: $light-black;
+  }
+}

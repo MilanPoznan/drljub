@@ -21,7 +21,7 @@
         font-family: 'ubuntu-bold';
         color: #7b2a8e;
     }
-    
+
     &__menu-button {
         position: absolute;
         float: right;
@@ -93,13 +93,7 @@
 
     } // &__menu-button-hamburger
 }
-.sub-menu {
-    .menu-item-has-children {
-        &:after {
-            // display: none;
-        }
-    }
-}
+
 @media screen and (min-width: 768px) {
     .header {
         &__phone {
