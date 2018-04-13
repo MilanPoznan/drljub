@@ -45,6 +45,7 @@
     }
 }
 
+
 @media screen and (min-width: 1200px) {
     .gallery {
         margin-top: -100px;
@@ -54,5 +55,19 @@
         &__image-wrapper {
             width: 24%;
         }
+    //     &__text {
+    //       animation: hoverImage 1s;
+    //       animation-play-state: paused;
+    // animation-fill-mode: forwards;
+    //     }
+    //     &__image {
+    //       &:hover + .gallery__text {
+    //         animation-play-state: running;
+    //           // animation-fill-mode: ;
+    //
+    //       }
     }
+    // @keyframes hoverImage {
+    //   to { height: 100%; }
+    // }
 }

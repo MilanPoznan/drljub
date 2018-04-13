@@ -1,4 +1,12 @@
 console.log('home');
+jQuery('.js-image-hover').mouseenter(
+  console.log('radi');
+
+);
+
+
+
+
 function initMap() {
         var uluru = {lat: 44.797728, lng:  20.472805};
         var map = new google.maps.Map(document.getElementById('map'), {

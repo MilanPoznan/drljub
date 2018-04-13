@@ -35,7 +35,7 @@ Aesthetic Concept  podrazumeva  personalizovan i sveobuhvatan pristup u nezi koÅ
 
             // display a sub field value
             ?>
-            <div class="gallery__image-wrapper">
+            <div class="gallery__image-wrapper js-image-hover">
               <div class="gallery__image" style="background-image: url(<?php the_sub_field('gallery_image'); ?>)">
 
               </div>
