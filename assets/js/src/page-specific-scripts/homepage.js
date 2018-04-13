@@ -1,11 +1,8 @@
 console.log('home');
-jQuery('.js-image-hover').mouseenter(
-  console.log('radi');
-
-);
-
-
-
+// jQuery('.js-image-hover').mouseenter(
+//   console.log('radi');
+//
+// );
 
 function initMap() {
         var uluru = {lat: 44.797728, lng:  20.472805};
