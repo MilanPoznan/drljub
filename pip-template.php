@@ -18,17 +18,14 @@ Template Name: pip-template
 
         <div class="pip__img-wrapper">
 
-          <div class="pip__pre pip__image-div js-background-imgtobg ">
+          <div class="pip__pre pip__image-div js-background-imgtobg">
             <img src="<?php the_sub_field('slika_pre'); ?>" alt="" class="js-image-imgtobg">
           </div>
           <div class="pip__posle pip__image-div js-background-imgtobg ">
             <img src="<?php the_sub_field('slika_posle'); ?>" alt="" class="js-image-imgtobg">
           </div>
         </div>
-        <div class="pip__sec-title content">
-          <h4><?php the_sub_field('pip_text'); ?></h4>
 
-        </div>
       </div>
 
 

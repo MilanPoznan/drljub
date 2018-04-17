@@ -45,7 +45,7 @@ a {
       top: -12px;
       left: -12px;
       width: 224px;
-      height: calc( 100% - 20px );
+      height: calc( 100% + 20px );
       border: 2px solid #7b2a8e;
       z-index: -1;
   }
@@ -81,12 +81,15 @@ a {
 }
 @include desktop() {
   .purple-border-right {
-    height: 400px;
-    top: -22px;
+    height: calc( 100% + 30px );
+    top: -20px;
   }
   .purple-border-left {
-    height: 400px;
-    top: -22px;
+    height: calc( 100% + 30px );
+    top: -20px;
+  }
+  .map {
+    margin-top: 60px;
   }
 }
 
